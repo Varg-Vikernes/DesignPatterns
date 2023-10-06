@@ -1,3 +1,4 @@
+import edu.utvt.beans.Department
 import edu.utvt.beans.FashionStyles
 import edu.utvt.beans.Outfit
 import edu.utvt.beans.OutfitFactory
@@ -24,7 +25,7 @@ fun main() {
 }
 
 fun printOutfitDetails(outfit: Outfit) {
-    println("Shirt: ${outfit.shirt.name}, Color: ${outfit.shirt.color}")
-    println("Pants: ${outfit.pants.name}, Color: ${outfit.pants.color}")
-    println("Shoes: ${outfit.shoes.name}, Color: ${outfit.shoes.color}")
+    println("Shirt: ${outfit.shirt.name}, Color: ${outfit.shirt.color} , Deparment ${Department.COMPUTER}")
+    println("Pants: ${outfit.pants.name}, Color: ${outfit.pants.color}, Department ${Department.HOME_AND_CHIKEN}")
+    println("Shoes: ${outfit.shoes.name}, Color: ${outfit.shoes.color} , Department${Department.SMART_HOME}")
 }
